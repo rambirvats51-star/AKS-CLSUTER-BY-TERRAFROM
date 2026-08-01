@@ -1,0 +1,19 @@
+# Local .terraform directories
+**/.terraform/
+hashicorp/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude sensitive / provider binaries
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

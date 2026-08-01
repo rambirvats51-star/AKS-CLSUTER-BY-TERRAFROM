@@ -1,0 +1,24 @@
+{
+  "name": "AKS Dev & Terraform Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+      "kubectl": "latest"
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.azure-account",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-azuretools.vscode-azureaks",
+        "hashicorp.terraform"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod +x setup_aks.sh"
+}
