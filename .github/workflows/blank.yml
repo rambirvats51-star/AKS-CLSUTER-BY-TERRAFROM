@@ -24,3 +24,8 @@ jobs:
     
       - name: az login
         run: az login --service-principal --username "3fa8ebd1-45d6-49c1-aa9e-a9fad76d14f3" --password "_WF8Q~Jr.iLeTikxA30hZHuWYi-.Y2mJiCvy6aWe" --tenant "e8ef4a60-5f6d-48fc-835c-b3593ca741f4"
+      - name: terrafrom init
+        run: terraform init
+
+      - name: terrafrom Plan
+        run: terraform plan
